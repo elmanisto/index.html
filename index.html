@@ -1,70 +1,221 @@
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAZ YOU</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAZ YOU</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#000;
+padding:20px;
+}
+
+header h1{
+font-size:65px;
+color:#FFD700;
+text-shadow:0 0 15px gold;
+}
+
+header p{
+font-size:22px;
+margin-top:15px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#FFD700;
+color:black;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ffcc00;
+transform:scale(1.05);
+}
+
+section{
+padding:60px 20px;
+}
+
+section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#1d1d1d;
+width:320px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(255,215,0,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card h3{
+text-align:center;
+margin:20px;
+font-size:30px;
+color:#FFD700;
+}
+
+.card a{
+display:block;
+margin:20px;
+padding:15px;
+text-align:center;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+color:#777;
+margin-top:60px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+font-size:30px;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:45px;
+}
+
+.products{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:95%;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header class="hero">
-    <h1>GAZ YOU</h1>
-    <p>La qualité avant tout.</p>
+<header>
 
-    <a href="#produits" class="btn">
-        Voir les produits
-    </a>
+<h1>GAZ YOU</h1>
+
+<p>La qualité avant tout.</p>
+
+<a href="#produits" class="btn">
+Voir les produits
+</a>
+
 </header>
 
 <section id="produits">
 
-    <h2>Nos Produits</h2>
+<h2>Nos Produits</h2>
 
-    <div class="products">
+<div class="products">
 
-        <div class="card">
-            <img src="tk.jpg...JPG">
+<div class="card">
 
-            <h3>TK</h3>
+<img src="tk.jpg" alt="Tank">
 
-            <p>🏪 Sur place : <strong>50€</strong></p>
+<h3>Tank</h3>
 
-            <p>🚚 Livraison : <strong>60€</strong></p>
+<a href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%20un%20Tank">
+Commander sur WhatsApp
+</a>
 
-            <a class="btn"
-            href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%20TK">
-            Commander sur WhatsApp
-            </a>
+</div>
 
-        </div>
+<div class="card">
 
-        <div class="card">
+<img src="1bbn.jpg" alt="Bonbonne">
 
-            <img src="1bbn.jpg.JPG">
+<h3>Bonbonne</h3>
 
-            <h3>1BBN</h3>
+<a href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%20une%20Bonbonne">
+Commander sur WhatsApp
+</a>
 
-            <p>🏪 Sur place : <strong>20€</strong></p>
+</div>
 
-            <p>🚚 Livraison : <strong>30€</strong></p>
-
-            <a class="btn"
-            href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%201BBN">
-            Commander sur WhatsApp
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <footer>
 
-    © 2026 GAZ YOU - Tous droits réservés
+© 2026 GAZ YOU - Tous droits réservés
 
 </footer>
 
-<script src="script.js"><
+<a class="whatsapp" href="https://wa.me/33761666226">💬</a>
+
+</body>
+</html>
